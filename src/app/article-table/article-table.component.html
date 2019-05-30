@@ -1,0 +1,16 @@
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <th scope="col">#</th>
+    <th scope="col">Title</th>
+    <th scope="col">Author</th>
+    <th scope="col">Data</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let article of articleList; let i = index">
+    <td>{{ article.index  }}</td>
+    <td>{{ article.title }}</td>
+    <td>{{ article.author.first }} {{ article.author.last }}</td>
+    <td>{{ article.created | date }} </td>
+  </tr>
+  </tbody>
+</table>
