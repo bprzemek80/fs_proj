@@ -1,5 +1,5 @@
 import {Component, ComponentFactoryResolver, ContentChild, Input, Renderer2, ViewChild, ViewContainerRef} from '@angular/core'
-import {Article} from '../model/article'
+import {Article} from '../../model/article'
 import {ArticleComponent} from '../article/article.component'
 
 @Component({

@@ -1,6 +1,6 @@
 import {Component, ComponentFactoryResolver, OnInit, ViewChild, ViewContainerRef} from '@angular/core'
 import {NotificationComponent} from '../notification/notification.component'
-import {NotificationService} from '../notification.service'
+import {NotificationService} from '../../notification.service'
 
 @Component({
   selector: 'app-notification-containter',
