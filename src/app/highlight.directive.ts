@@ -23,12 +23,14 @@ export class HighlightDirective {
     this.removeToRendererClass()
   }
 
+  // This is not recommended to modding dom element
   private highlight(color: string) {
     this.el.nativeElement.style.backgroundColor = color
     this.el.nativeElement.style.cursor = 'default'
   }
 
   private addClassToRenderer() {
+    // To modifying dom element use renderer
     this.renderer.addClass(this.el.nativeElement, this.appHighlight)
   }
 

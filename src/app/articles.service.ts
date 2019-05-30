@@ -15,7 +15,7 @@ export class ArticlesService {
   constructor(private http: HttpClient) {
   }
 
-  getArticles(page: number = 1, limit: number = 5): Observable<Page<Article>> {
+  getArticles(page: number = 1, limit: number = 10): Observable<Page<Article>> {
     return this.http.get<Article[]>(`${apiUrl}/articles`, {
       observe: 'response',
       params: {
@@ -24,7 +24,7 @@ export class ArticlesService {
       }
     }).pipe(
       map((res: HttpResponse<any>) => ({
-          totalCount: Math.ceil(+res.headers.get('x-total-count') / 5),
+          totalCount: Math.ceil(+res.headers.get('x-total-count') / 10),
           data: res.body
         })
       ))

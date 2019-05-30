@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core'
+import {Component, Input, OnInit, Renderer2, ViewChild} from '@angular/core'
+import {Article} from '../model/article'
 
 @Component({
   selector: 'app-article',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core'
 })
 export class ArticleComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  article: Article
 
-  ngOnInit() {
+  closeFunction = v => v
+
+  @ViewChild('dialog')
+  dialog
+
+  constructor() {
   }
 
+  ngOnInit() {
+
+  }
 }

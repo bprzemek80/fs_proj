@@ -16,7 +16,8 @@ import { LogoutComponent } from './logout/logout.component';
 import { ArticleTableComponent } from './article-table/article-table.component';
 import { ArticlePaginationComponent } from './article-pagination/article-pagination.component';
 import { RepeatDirective } from './repeat.directive';
-import { HighlightDirective } from './highlight.directive'
+import { HighlightDirective } from './highlight.directive';
+import { ArticleFrameComponent } from './article-frame/article-frame.component'
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HighlightDirective } from './highlight.directive'
     ArticleTableComponent,
     ArticlePaginationComponent,
     RepeatDirective,
-    HighlightDirective
+    HighlightDirective,
+    ArticleFrameComponent
   ],
   imports: [
     BrowserModule,
