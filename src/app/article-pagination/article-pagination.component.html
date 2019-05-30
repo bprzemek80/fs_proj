@@ -1,6 +1,7 @@
 <div class="pagination-container">
   <ul class="pagination">
-    <li class="page-item" *ngFor="let i of pageNumbers"><a class="page-link"
-                                                           (click)="pageChange.emit(i + 1)">{{ i + 1 }}</a></li>
+    <li class="page-item" *appRepeat="let page of totalPages;">
+      <a class="page-link" (click)="onPageChange(page)">{{ page }}</a>
+    </li>
   </ul>
 </div>

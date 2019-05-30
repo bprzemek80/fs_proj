@@ -14,7 +14,9 @@ import {ArticlesService} from './articles.service'
 import {AuthInterceptor} from './auth-interceptor.service';
 import { LogoutComponent } from './logout/logout.component';
 import { ArticleTableComponent } from './article-table/article-table.component';
-import { ArticlePaginationComponent } from './article-pagination/article-pagination.component'
+import { ArticlePaginationComponent } from './article-pagination/article-pagination.component';
+import { RepeatDirective } from './repeat.directive';
+import { HighlightDirective } from './highlight.directive'
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ArticlePaginationComponent } from './article-pagination/article-paginat
     NavigationComponent,
     LogoutComponent,
     ArticleTableComponent,
-    ArticlePaginationComponent
+    ArticlePaginationComponent,
+    RepeatDirective,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
