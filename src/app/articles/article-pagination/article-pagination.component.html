@@ -1,0 +1,7 @@
+<div class="pagination-container">
+  <ul class="pagination">
+    <li class="page-item" *appRepeat="let page of totalPages;">
+      <a class="page-link" (click)="onPageChange(page)">{{ page }}</a>
+    </li>
+  </ul>
+</div>

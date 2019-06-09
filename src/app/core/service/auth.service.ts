@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core'
-import {BehaviorSubject, ReplaySubject} from 'rxjs'
+import {BehaviorSubject} from 'rxjs'
 import {Router} from '@angular/router'
 
 @Injectable()
@@ -16,7 +16,7 @@ export class AuthService {
     return this._isLoggedIn$
   }
 
-  private _token = 'sdfslkdfjsdff398239f823ue38ue2938dh9238u'
+  private _token = 'token-546f206a6573742074616a656d6e69637a7920746f6b656ee'
 
   get token(): BehaviorSubject<string> {
     return this._tokenSubject

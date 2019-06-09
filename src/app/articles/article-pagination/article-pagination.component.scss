@@ -1,4 +1,9 @@
 .pagination-container {
   display: flex;
   justify-content: center;
+
+  ::ng-deep
+    a:hover {
+    cursor: pointer;
+  }
 }

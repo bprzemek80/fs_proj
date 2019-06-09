@@ -1,4 +1,4 @@
-<table class="table table-striped">
+<table class="table">
   <thead class="thead-dark">
     <th scope="col">#</th>
     <th scope="col">Title</th>
@@ -6,7 +6,7 @@
     <th scope="col">Data</th>
   </thead>
   <tbody>
-  <tr *ngFor="let article of articleList; let i = index">
+  <tr appHighlight="highlight" *ngFor="let article of articleList" (click)="onArticleClick(article)">
     <td>{{ article.index  }}</td>
     <td>{{ article.title }}</td>
     <td>{{ article.author.first }} {{ article.author.last }}</td>
@@ -14,3 +14,5 @@
   </tr>
   </tbody>
 </table>
+
+<template #articlemodalcontainer></template>
