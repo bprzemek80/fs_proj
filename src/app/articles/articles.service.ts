@@ -1,10 +1,10 @@
 import {Injectable} from '@angular/core'
 import {HttpClient, HttpResponse} from '@angular/common/http'
-import {environment} from '../environments/environment'
-import {Article} from './model/article'
+import {Article} from '../model/article'
 import {Observable} from 'rxjs'
-import {Page} from './model/page'
+import {Page} from '../model/page'
 import {map} from 'rxjs/operators'
+import { environment } from 'src/environments/environment';
 
 const apiUrl = environment.apiUrl
 
