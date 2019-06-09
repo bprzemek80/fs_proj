@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core'
-import {ArticlesService} from '../../articles.service'
+import {ArticlesService} from '../articles.service'
 import {Article} from '../../model/article'
 import {Page} from '../../model/page'
 
